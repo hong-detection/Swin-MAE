@@ -4,7 +4,7 @@
 
 
 
-![pipeline](pipeline.png)
+![pipeline](FIG/pipeline.png)
 
 ## Introduction
 
