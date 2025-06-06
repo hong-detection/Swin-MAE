@@ -21,7 +21,7 @@ In this work, four models were compared for their performance over different epo
 
 To investigate the advancement of self-supervised learning based on masked image modeling, we visualize the self-supervised learning model and the supervised learning model.The self-supervised model's attention is focused on the key parts of the scene objects and has a better grasp of the feature information, avoiding the problem of feature redundancy and excessive computational costs.
 
-![vss](vss.jpg)
+![vss](FIG/keshihua.png)
 
 ### State Farm Pre-trained Model
 
