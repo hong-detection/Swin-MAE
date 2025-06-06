@@ -1,6 +1,6 @@
-# SL-DDBD
+# Swin-MAE
 
-### SL-DDBD: A Novel Driver Distraction Behavior Detection Method Based on Self-supervised Learning with Masked Image Modeling
+### A Self-supervised Framework Combining Swin-MAE and Contrastive Learning for Train Operator Fatigue Monitoring
 
 
 
@@ -8,9 +8,8 @@
 
 ## Introduction
 
-In this work, we proposed a novel method for driver distraction behavior detection, termed as **SL-DDBD**. Self-supervised learning framework for masked image modeling. The structure-improved swin transformer was used as an encoder. Extended SF3 dataset using multiple methods of data augmentation strategies. Selected the best masking strategy.
+In this work, we proposed a novel method for driver distraction behavior detection, termed as **Swin-MAE**. Self-supervised learning framework for masked image modeling. The structure-improved swin transformer was used as an encoder. Extended SF3 dataset using multiple methods of data augmentation strategies. Selected the best masking strategy.
 
-More detailed can be found in our [arxiv](https://arxiv.org/ftp/arxiv/papers/2306/2306.00543.pdf) paper.
 
 ## Main Results
 
@@ -89,11 +88,11 @@ You can modify the inference code to customize the inference categories and data
 If you are interested in this work, please cite the following work:
 
 ```
-@article{zhang2023novel,
-  title={A Novel Driver Distraction Behavior Detection Method Based on Self-Supervised Learning With Masked Image Modeling},
-  author={Zhang, Yingzhi and Li, Taiguo and Li, Chao and Zhou, Xinghong},
+@article{zhou2025novel,
+  title={A Self-supervised Framework Combining Swin-MAE and Contrastive Learning for Train Operator Fatigue Monitoring},
+  author={Zhou, Xinghong and Li, Taiguo and Li, Chao},
   journal={IEEE Internet of Things Journal},
-  year={2023},
+  year={2025},
   publisher={IEEE}
 }
 ```
