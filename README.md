@@ -23,15 +23,13 @@ In this work, we compared our model with six benchmark models. Finally, after 10
 
 | name | Fine-tuning epochs | pre-train resolution | fine-tune resolution | acc@1 | pre-trained model |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| MAE | 100 | 224x224 | 224x224 | 86.57 | [pth](通过网盘分享的文件：finetune_vit
-链接: https://pan.baidu.com/s/17OyX3-cpDK0Q0-aacWGY-Q?pwd=5fxy 提取码: 5fxy)/[config](configs/swinmae_finetune__vit_base__img224__800ep.yaml) | 
+| MAE | 100 | 224x224 | 224x224 | 86.57 | [pth](通过网盘分享的文件：finetune_vit 链接: https://pan.baidu.com/s/17OyX3-cpDK0Q0-aacWGY-Q?pwd=5fxy 提取码: 5fxy)/[config](configs/swinmae_finetune__vit_base__img224__800ep.yaml) | 
 
 ### Fine-tuning Model Based on Swin-MAE
 
 | name | Fine-tuning epochs | pre-train resolution | fine-tune resolution | acc@1 | pre-trained model |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| SwinMAE | 100 | 224x224 | 224x224 | 96.65 | [pth](通过网盘分享的文件：finetune_swin
-链接: https://pan.baidu.com/s/1367-AFLMfZqsTHNmKhMkWQ?pwd=mfmb 提取码: mfmb)/[config](configs/swinmae_finetune__swin_base__img224_window7__800ep.yaml) | 
+| SwinMAE | 100 | 224x224 | 224x224 | 96.65 | [pth](通过网盘分享的文件：finetune_swin 链接: https://pan.baidu.com/s/1367-AFLMfZqsTHNmKhMkWQ?pwd=mfmb 提取码: mfmb)/[config](configs/swinmae_finetune__swin_base__img224_window7__800ep.yaml) | 
 
 ## Comparison of Backbone Results
 This study implements two core improvements based on the MAE (Masked Autoencoder) framework: replacing the visual Transformer backbone network with a hierarchical Swin Transformer architecture, and innovatively integrating window masking mechanism and contrastive learning module to construct a Swin MAE pre training model. To evaluate the effectiveness of different technological routes in the system, this paper sets up four control experiments (basic MAE, Swin MAE, MAE+CL, Swin MAE+CL), and compares the performance of downstream tasks after fine-tuning the backbone network.
@@ -44,11 +42,8 @@ In order to more intuitively demonstrate the superiority of the Swin MAE based t
 
 ## Other Model
 The other model folder contains the training codes for MOCOv3 and MAE, and their weights can be downloaded from here.
-MOCO v3:[pth](通过网盘分享的文件：mocov3权重
-链接: https://pan.baidu.com/s/1vY9zI55e2OTJWjsRqFsQQg?pwd=26bi 提取码: 26bi)
-MAE:[pth](通过网盘分享的文件：MAE权重
-链接: https://pan.baidu.com/s/18rYhbILR9sV-rMlojXF6XA?pwd=xvy5 提取码: xvy5)
-
+MOCO v3:[pth](通过网盘分享的文件：mocov3权重 链接: https://pan.baidu.com/s/1vY9zI55e2OTJWjsRqFsQQg?pwd=26bi 提取码: 26bi)
+MAE:[pth](通过网盘分享的文件：MAE权重 链接: https://pan.baidu.com/s/18rYhbILR9sV-rMlojXF6XA?pwd=xvy5 提取码: xvy5)
 
 ## Installation
 
