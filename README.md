@@ -38,12 +38,16 @@ This study implements two core improvements based on the MAE (Masked Autoencoder
 
 In order to more intuitively demonstrate the superiority of the Swin MAE based train driver fatigue detection model over the benchmark model, we conducted model attention visualization. The attention range of Swin MAE+CL is also focused on the eyes and mouth of the train driver, and the highlighted parts are further narrowed, indicating that the model has learned how to better focus on the parts of the global features that are highly related to fatigue representation. It can better learn the deep level fatigue feature information, avoiding the problems of feature redundancy and high computational cost.
 
-![vkeshihua](FIG/keshihua.png)
+<div align="center">
+    <img src="FIG/keshihua.png" height="500px" />
+</div>
 
 ## Other Model
 The other model folder contains the training codes for MOCOv3 and MAE, and their weights can be downloaded from here.
-MOCO v3:[pth](通过网盘分享的文件：mocov3权重 链接: https://pan.baidu.com/s/1vY9zI55e2OTJWjsRqFsQQg?pwd=26bi 提取码: 26bi)
-MAE:[pth](通过网盘分享的文件：MAE权重 链接: https://pan.baidu.com/s/18rYhbILR9sV-rMlojXF6XA?pwd=xvy5 提取码: xvy5)
+
+MOCO v3:[pth](通过网盘分享的文件：mocov3权重 链接: https://pan.baidu.com/s/1vY9zI55e2OTJWjsRqFsQQg?pwd=26bi 提取码: 26bi).
+
+MAE:[pth](通过网盘分享的文件：MAE权重 链接: https://pan.baidu.com/s/18rYhbILR9sV-rMlojXF6XA?pwd=xvy5 提取码: xvy5).
 
 ## Installation
 
