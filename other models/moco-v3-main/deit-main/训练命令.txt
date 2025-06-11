@@ -1,0 +1,19 @@
+#要执行 ViT 的迁移学习，请使用我们的脚本将预训练的 ViT 检查点转换为 DEiT 格式：
+python convert_to_deit.py \
+  --input /hy-tmp/vit-b-300ep.pth.tar \
+  --output /hy-tmp/mocov3-pretrain.pth
+#迁移学习脚本（使用 8 GPU 计算机）：
+#CIFAR-10型
+python -u -m torch.distributed.launch --nproc_per_node=1 --use_env main.py \
+    --batch-size 128 --output_dir /hy-tmp/output --epochs 100 --lr 3e-4 --weight-decay 0.1 \
+    --no-pin-mem  --warmup-epochs 3 --data-set CIFAR --data-path /hy-tmp/dataset  --no-repeated-aug \
+    --resume /hy-tmp/mocov3-pretrain.pth \
+    --reprob 0.0 --drop-path 0.1 --mixup 0.8 --cutmix 1
+#命令不好使就把地址和参数都修改进main.py然后python main.py
+#配置环境
+pip install timm==0.3.2
+File "/usr/local/lib/python3.8/dist-packages/timm/models/layers/helpers.py"
+如果出现上述报错信息，打开helpers.py文件，注释报错行并替换
+# from torch._six import container_abcs   # comment it
+import collections.abc as container_abcs  # alternative one
+#下一步是将nthu-ddd数据集在mocov3上跑出结果
