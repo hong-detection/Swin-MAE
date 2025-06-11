@@ -1,0 +1,46 @@
+#MAE选择pytoch版本为1.12.0，cuda版本为11.3，Python版本为3.8
+#安装固定版本的timm库
+pip install timm==0.3.2
+#从numpy1.24起删除了numpy.bool、numpy.int、numpy.float、numpy.complex、numpy.object、numpy.str、numpy.long、numpy.unicode类型的支持
+pip uninstall numpy
+pip install numpy==1.23.5
+#从github上复制完整项目则如下例子：
+git clone https://github.com/Zian-Xu/Swin-MAE.git
+#按照开源代码的requirements.txt配置环境
+pip install -r requirements.txt
+
+File "/usr/local/lib/python3.8/dist-packages/timm/models/layers/helpers.py"
+如果出现上述报错信息，打开helpers.py文件，注释报错行并替换
+# from torch._six import container_abcs   # comment it
+import collections.abc as container_abcs  # alternative one
+
+#summary网络可视化方法本来是tensorflow中专有的
+#现在pytorch中也实现了：pip install torchsummary
+#Ubuntu系统下 .7z 文件压缩解压命令：先安装：
+sudo apt install p7zip-full
+#解压命令:
+7z x yawning.7z -r -o/hy-tmp/dataset/ -mmt
+#unzip解压到指定目录
+unzip -d /hy-tmp/ nthu-ddd.zip
+
+
+#在厚德云miniconda上配置swin-mae环境
+#创建虚拟环境pytorch3.8
+conda create -n pytorch3.8 python=3.8
+#激活环境
+conda activate pytorch3.8
+#先安装requirements.txt中的内容
+pip install -r requirements.txt
+pip install einops==0.6.0
+pip uninstall numpy
+pip install numpy==1.23.5
+#安装torch
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+#安装TensorBoard
+pip install tensorboard -i https://pypi.tuna.tsinghua.edu.cn/simple/
+#安装six包
+pip install six
+
+
+
+
